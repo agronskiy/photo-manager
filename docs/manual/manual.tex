@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{agmathstyle}
+
+
+% \setlength{\textheight}{50\baselineskip}
+% \setlength{\textheight}{\baselinestretch\textheight}
+% \addtolength{\textheight}{\topskip}
+% \textwidth=14cm
+% \oddsidemargin = 30pt
+% \topmargin=-1cm
+
+
+\newcommand{\PM}{{\normalfont \textbf{PhotoManager}}}
+\newcommand{\arr}{$\rightarrow$}
+\newcommand{\mycap}[1]{{\small #1}}
+
+\makeatletter
+\renewcommand{\@oddhead}{\underline{\hbox to\textwidth{\textsc{PhotoManager 1.2: руководство} \hfil стр. \thepage}}}
+\renewcommand{\@oddfoot}{}
+\makeatother
+
+\newcommand{\centpic}[3][]{%
+    \begin{figure}[!h]
+        \begin{center}
+        \includegraphics[width=90mm]{#2}
+        \caption{#3} #1
+        \end{center}
+    \end{figure}
+}
+
+\newcommand{\centpich}[3][]{%
+    \begin{figure}[!h]
+        \begin{center}
+        \includegraphics[height=70mm]{#2}
+        \caption{#3} #1
+        \end{center}
+    \end{figure}
+}
+
+
+
+\newenvironment{prim}{\textbf{Примечание: } \itshape}{}
+
+\sloppy
+
+\begin{document}
+
+\begin{titlepage}
+
+\vspace*{5cm}
+
+\begin{center} \bfseries{\LARGE PhotoManager 1.2: \\
+Руководство} \end{center}
+
+\vspace{1cm}
+\begin{flushright}
+[Версия документа 0.2]
+\end{flushright}
+\vspace{\fill}
+
+\begin{center}\copyright \, А.\,Гронский, \verb"gronsky_a@mail.ru"\end{center}
+\begin{center} Москва, 2009 \end{center}
+
+\end{titlepage}
+
+\tableofcontents
+
+\pagebreak
+\input{intro}
+\input{user1}
+\input{admin1}
+\end{document}

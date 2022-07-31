@@ -1,0 +1,1 @@
+CREATE DATABASE pm_database WITH TEMPLATE = template0 ENCODING = 'UTF8';

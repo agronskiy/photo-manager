@@ -1,0 +1,1 @@
+call uic -tr QObject::tr -o ../ui_%1.h %1.ui
